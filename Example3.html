@@ -69,6 +69,9 @@
         <!-- This element will contain our vega-lite chart -->
         <figure id="Location1"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
 
+        <!-- This element will contain our vega-lite chart -->
+        <figure id="Location2"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+
     </section>
 
     <!-- Do you want to add more sections? -->
@@ -91,6 +94,11 @@
         // e.g. 
         // let figure_2_spec = ...
         // vegaEmbed('#Location2', figure_2_spec)
+
+        let figure_2_spec = "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/2/s2_chart2.json"; // We're storing the URL of the graph we want to display in a variable
+        // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
+
+        vegaEmbed('#Location2', figure_1_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
 
 
     </script>
