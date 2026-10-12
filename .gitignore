@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+
+# Secrets (API keys, e.g. for Comtrade)
+.env
+
+# Raw API pulls: uncomment both lines if they get large or Actions refetches them
+# data/raw/*
+# !data/raw/.gitkeep
