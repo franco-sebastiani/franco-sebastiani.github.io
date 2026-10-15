@@ -1,0 +1,5 @@
+# Python packages for the data pipeline and notebooks
+# Install with: pip install -r requirements.txt
+requests
+pandas
+ipykernel  # lets VS Code run notebooks with this environment
