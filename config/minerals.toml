@@ -1,0 +1,313 @@
+# UK critical and growth minerals, with their HS (CN8) code definitions
+#
+# Membership: Annex 1 of the Critical Minerals technical annex (34 critical, 23 growth minerals)
+# Codes:      Annex 5, Table 3 of the same annex ("HS code definition of critical and growth minerals"),
+#             transcribed as published. Codes are strings so they match Cn8Code in the HMRC lookup.
+#
+# Scope note: Annex 5 includes semi-manufactured products (e.g. copper wire, aluminium sheet,
+# rare earth magnets), so it is broader than the CMIC 2024 Criticality Assessment, Appendix 9.
+#
+# Codes listed under more than one mineral (watch for double counting):
+#   71104100, 71104900  iridium and ruthenium (identical code lists)
+#   26190020            iron and manganese
+#   28332930            cobalt and titanium
+
+[source]
+title = "Critical Minerals technical annex (UK Critical Minerals Strategy)"
+publisher = "Department for Business and Trade"
+url = "https://www.gov.uk/government/publications/uk-critical-minerals-strategy/critical-minerals-technical-annex"
+version = "2026-01-23"   # 'Updated' date shown on the page
+retrieved = "2026-10-15"
+licence = "Open Government Licence v3.0"
+
+[minerals.aluminium]
+name = "Aluminium"
+lists = ["critical", "growth"]
+cn8 = [
+  "26060000", "26204000", "28182000", "28183000", "28261200", "28263000", "28273200", "28332200",
+  "76011000", "76011010", "76011090", "76012030", "76012040", "76012080", "76020011", "76020019",
+  "76020090", "76031000", "76032000", "76041010", "76041090", "76042100", "76042910", "76042990",
+  "76051100", "76051900", "76052100", "76052900", "76061130", "76061150", "76061191", "76061193",
+  "76061199", "76061230", "76061250", "76061292", "76061293", "76061299", "76069100", "76069200",
+  "76072091", "76090000", "76169910", "76169990",
+]
+notes = ""
+
+[minerals.antimony]
+name = "Antimony"
+lists = ["critical", "growth"]
+cn8 = ["26171000", "28258000", "81101000", "81102000", "81109000"]
+notes = ""
+
+[minerals.beryllium]
+name = "Beryllium"
+lists = ["growth"]
+cn8 = ["81121200", "81121300", "81121900"]
+notes = ""
+
+[minerals.bismuth]
+name = "Bismuth"
+lists = ["critical"]
+cn8 = ["81061010", "81061090", "81069010", "81069090"]
+notes = ""
+
+[minerals.borates]
+name = "Borates"
+lists = ["critical"]
+cn8 = ["25280000", "28045010", "28100010", "28100090"]
+notes = ""
+
+[minerals.chromium]
+name = "Chromium"
+lists = ["growth"]
+cn8 = [
+  "26100000", "28191000", "28199010", "28199090", "72024110", "72024190", "72024910", "72024950",
+  "72024990", "72025000", "81122110", "81122190", "81122200", "81122900",
+]
+notes = ""
+
+[minerals.cobalt]
+name = "Cobalt"
+lists = ["critical", "growth"]
+cn8 = ["26050000", "28220000", "28273930", "28332930", "81052000", "81053000", "81059000"]
+notes = "28332930 is also listed under titanium."
+
+[minerals.copper]
+name = "Copper"
+lists = ["growth"]
+cn8 = [
+  "26030000", "26203000", "28255000", "28274100", "28332500", "28342940", "74010000", "74020000",
+  "74031100", "74031200", "74031300", "74031900", "74032100", "74032200", "74032900", "74040010",
+  "74040091", "74040099", "74050000", "74061000", "74062000", "74071000", "74072110", "74072190",
+  "74072900", "74081100", "74081910", "74081990", "74082100", "74082200", "74082900", "74091100",
+  "74091900", "74092100", "74092900", "74093100", "74093900", "74094000", "74099000", "74101100",
+  "74101200", "74102100", "74102200", "74111010", "74111090", "74112110", "74112190", "74112200",
+  "74112900", "74121000", "74122000", "74130000", "74192000", "74198010", "74198030", "74198090",
+  "85441110", "85441190", "85446010",
+]
+notes = ""
+
+[minerals.gallium]
+name = "Gallium"
+lists = ["critical", "growth"]
+cn8 = ["81129289"]
+notes = ""
+
+[minerals.germanium]
+name = "Germanium"
+lists = ["critical", "growth"]
+cn8 = ["81129295", "81129940"]
+notes = ""
+
+[minerals.graphite]
+name = "Graphite"
+lists = ["critical", "growth"]
+cn8 = [
+  "25041000", "25049000", "38011000", "38012010", "38012090", "38019000", "68151900", "85451900",
+  "85459090",
+]
+notes = "Critical list names natural graphite only; growth list covers natural and synthetic. Annex 5 has one entry for both. Chapter 25 codes are natural graphite."
+
+[minerals.hafnium]
+name = "Hafnium"
+lists = ["critical", "growth"]
+cn8 = ["81123100", "81123900"]
+notes = ""
+
+[minerals.helium]
+name = "Helium"
+lists = ["critical", "growth"]
+cn8 = ["28042910", "28454000"]
+notes = ""
+
+[minerals.indium]
+name = "Indium"
+lists = ["critical"]
+cn8 = ["81129281"]
+notes = ""
+
+[minerals.iridium]
+name = "Iridium"
+lists = ["critical", "growth"]
+cn8 = ["71104100", "71104900"]
+notes = "Growth list membership via platinum group metals. Same codes as ruthenium."
+
+[minerals.iron]
+name = "Iron"
+lists = ["critical"]
+cn8 = [
+  "25020000", "26011100", "26011200", "26012000", "26180000", "26190020", "28211000", "28273920",
+  "72011011", "72011019", "72011030", "72011090", "72012000", "72015010", "72015090", "72041000",
+  "72043000", "72044110", "72044191", "72044199", "72044910", "72044930", "72044990", "72045000",
+  "72051000", "72052900", "72061000", "72069000", "73269098",
+]
+notes = "26190020 is also listed under manganese."
+
+[minerals.lithium]
+name = "Lithium"
+lists = ["critical", "growth"]
+cn8 = ["25309040", "28252000", "28369100", "38249975"]
+notes = ""
+
+[minerals.magnesite]
+name = "Magnesite"
+lists = ["critical"]
+cn8 = ["25191000", "25199010", "25199090"]
+notes = ""
+
+[minerals.magnesium]
+name = "Magnesium"
+lists = ["critical"]
+cn8 = [
+  "25302000", "28161000", "28273100", "28332100", "81041100", "81041900", "81042000", "81043000",
+  "81049000",
+]
+notes = ""
+
+[minerals.manganese]
+name = "Manganese"
+lists = ["critical", "growth"]
+cn8 = [
+  "26020000", "26190020", "28201000", "28209010", "28209090", "72021120", "72021900", "72023000",
+  "81110011", "81110019", "81110090",
+]
+notes = "26190020 is also listed under iron."
+
+[minerals.nickel]
+name = "Nickel"
+lists = ["critical", "growth"]
+cn8 = [
+  "26040000", "26209910", "28254000", "28273500", "28332400", "72026000", "75011000", "75012000",
+  "75021000", "75022000", "75030010", "75030090", "75040000", "75051100", "75051200", "75052100",
+  "75052200", "75061000", "75062000", "75071100", "75071200", "75072000", "75081000", "75089000",
+]
+notes = ""
+
+[minerals.niobium]
+name = "Niobium"
+lists = ["critical"]
+cn8 = ["26209920", "72029300", "81129240", "81129950"]
+notes = ""
+
+[minerals.phosphorus]
+name = "Phosphorus"
+annex5_name = "Phosphates"
+lists = ["critical"]
+cn8 = [
+  "25101000", "25102000", "28047000", "28047010", "28047090", "28092000", "28139010", "28351000",
+  "28352200", "28352400", "28352500", "28352600", "28352910", "28352930", "28352990", "28353100",
+  "28353900", "31031100", "31031900",
+]
+notes = "Critical list says phosphorus; Annex 5 lists the codes under 'Phosphates'."
+
+[minerals.platinum]
+name = "Platinum"
+lists = ["critical", "growth"]
+cn8 = ["71101100", "71101910", "71101980", "71129200", "71151000"]
+notes = "Growth list membership via platinum group metals."
+
+[minerals.rare_earth_elements]
+name = "Rare earth elements"
+lists = ["critical", "growth"]
+cn8 = [
+  "28053010", "28053020", "28053021", "28053029", "28053030", "28053031", "28053039", "28053040",
+  "28053080", "28461000", "28469010", "28469020", "28469030", "28469040", "28469050", "28469060",
+  "28469070", "28469090", "36069010", "85051110",
+]
+notes = ""
+
+[minerals.rhenium]
+name = "Rhenium"
+lists = ["critical", "growth"]
+cn8 = ["81124110", "81124190", "81124900"]
+notes = ""
+
+[minerals.rhodium]
+name = "Rhodium"
+lists = ["critical", "growth"]
+cn8 = ["71103100", "71103900"]
+notes = "Growth list membership via platinum group metals."
+
+[minerals.ruthenium]
+name = "Ruthenium"
+lists = ["critical", "growth"]
+cn8 = ["71104100", "71104900"]
+notes = "Growth list membership via platinum group metals. Same codes as iridium."
+
+[minerals.silicon]
+name = "Silicon"
+lists = ["critical", "growth"]
+cn8 = [
+  "28046100", "28046900", "28112200", "28399000", "28492000", "38180010", "39100000", "72022100",
+  "72022910", "72022990",
+]
+notes = ""
+
+[minerals.sodium]
+name = "Sodium"
+lists = ["critical"]
+cn8 = ["28051100", "28151100"]
+notes = ""
+
+[minerals.tantalum]
+name = "Tantalum"
+lists = ["critical", "growth"]
+cn8 = ["81032000", "81033000", "81039910", "81039990", "85322100"]
+notes = ""
+
+[minerals.tellurium]
+name = "Tellurium"
+lists = ["critical"]
+cn8 = ["28045090"]
+notes = ""
+
+[minerals.tin]
+name = "Tin"
+lists = ["critical", "growth"]
+cn8 = [
+  "26090000", "26209940", "28273910", "80011000", "80012000", "80020000", "80030000", "80070010",
+  "80070080",
+]
+notes = ""
+
+[minerals.titanium]
+name = "Titanium"
+lists = ["critical", "growth"]
+cn8 = [
+  "26140000", "26209960", "28230000", "28332930", "72029100", "81082000", "81083000", "81089030",
+  "81089050", "81089060", "81089090",
+]
+notes = "28332930 is also listed under cobalt."
+
+[minerals.tungsten]
+name = "Tungsten"
+lists = ["critical", "growth"]
+cn8 = [
+  "26110000", "28259040", "28418000", "28499030", "72028000", "81011000", "81019400", "81019600",
+  "81019700", "81019910", "81019990",
+]
+notes = ""
+
+[minerals.uranium]
+name = "Uranium"
+lists = ["growth"]
+cn8 = [
+  "26121090", "28441010", "28441030", "28442059", "28443011", "28443019", "28443091", "28444210",
+  "28444310",
+]
+notes = ""
+
+[minerals.vanadium]
+name = "Vanadium"
+lists = ["critical"]
+cn8 = ["26190095", "28253000", "72029200", "81129291"]
+notes = ""
+
+[minerals.zinc]
+name = "Zinc"
+lists = ["critical"]
+cn8 = [
+  "26080000", "26201100", "26201900", "28170000", "79012000", "79020000", "79031000", "79039000",
+  "79070000",
+]
+notes = ""
