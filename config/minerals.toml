@@ -5,7 +5,7 @@
 #             transcribed as published. Codes are strings so they match Cn8Code in the HMRC lookup.
 #
 # Scope note: Annex 5 includes semi-manufactured products (e.g. copper wire, aluminium sheet,
-# rare earth magnets), so it is broader than the CMIC 2024 Criticality Assessment, Appendix 9.
+# rare earth magnets), not only ores, concentrates and refined materials.
 #
 # Codes listed under more than one mineral (watch for double counting):
 #   71104100, 71104900  iridium and ruthenium (identical code lists)

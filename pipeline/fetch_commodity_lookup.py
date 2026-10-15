@@ -1,10 +1,12 @@
 """Fetch the full HMRC commodity lookup (CN8/HS codes and descriptions).
 
 Run from the repo root:  python pipeline/fetch_commodity_lookup.py
-Output: data/raw/hmrc_commodity_lookup_<YYYY-MM-DD>.json  (records saved untouched)
-Log:    data/raw/retrieval_log.jsonl  (one line appended per run, success or failure)
+Output: data/raw/hmrc_commodity_lookup.json  (records saved untouched; overwritten on each run)
+Log:    data/raw/retrieval_log.jsonl  (one line appended per run, success or failure,
+        with a SHA-256 hash identifying the exact file version saved)
 """
 
+import hashlib
 import json
 from datetime import datetime, timezone
 from pathlib import Path
@@ -37,13 +39,15 @@ def fetch_all(url):
 def main():
     retrieved_at = datetime.now(timezone.utc)
     RAW_DIR.mkdir(parents=True, exist_ok=True)
-    out_file = RAW_DIR / f"hmrc_commodity_lookup_{retrieved_at:%Y-%m-%d}.json"
+    out_file = RAW_DIR / "hmrc_commodity_lookup.json"
 
-    records, pages, status = [], 0, "success"
+    records, pages, status, sha256 = [], 0, "success", None
     try:
         records, pages = fetch_all(START_URL)
         with open(out_file, "w", encoding="utf-8") as f:
             json.dump(records, f, ensure_ascii=False, indent=1)
+        # Fingerprint of the saved file: matches it to a git commit and shows when the data changed
+        sha256 = hashlib.sha256(out_file.read_bytes()).hexdigest()
     except Exception as err:
         status = f"error: {err}"
 
@@ -55,6 +59,7 @@ def main():
         "file": str(out_file.relative_to(REPO_ROOT)) if status == "success" else None,
         "rows": len(records),
         "pages": pages,
+        "sha256": sha256,
         "status": status,
     }
     with open(LOG_FILE, "a", encoding="utf-8") as f:
