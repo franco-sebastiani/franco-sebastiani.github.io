@@ -1,0 +1,1 @@
+{"timestamp": "2026-10-12T22:04:26.431643+00:00", "source": "HMRC uktradeinfo API - Commodity lookup", "url": "https://api.uktradeinfo.com/Commodity", "mineral": "lookup", "file": "data/raw/hmrc_commodity_lookup_2026-10-12.json", "rows": 16243, "pages": 1, "status": "success"}
