@@ -10,6 +10,7 @@ __pycache__/
 # Secrets (API keys, e.g. for Comtrade)
 .env
 
-# Raw API pulls: uncomment both lines if they get large or Actions refetches them
-# data/raw/*
-# !data/raw/.gitkeep
+# Raw data stays local: rebuild it by running the scripts in pipeline/.
+# The retrieval log is kept as the provenance record of every pull.
+data/raw/*
+!data/raw/retrieval_log.jsonl
