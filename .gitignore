@@ -10,6 +10,9 @@ __pycache__/
 # Secrets (API keys, e.g. for Comtrade)
 .env
 
+# Output of the last ./run.sh run (local working file)
+output.txt
+
 # Raw data stays local: rebuild it by running the scripts in pipeline/.
 # The retrieval log is kept as the provenance record of every pull.
 data/raw/*
