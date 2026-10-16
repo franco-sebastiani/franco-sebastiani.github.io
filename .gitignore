@@ -17,3 +17,6 @@ output.txt
 # The retrieval log is kept as the provenance record of every pull.
 data/raw/*
 !data/raw/retrieval_log.jsonl
+
+# Interim data is rebuilt from raw data by pipeline/build_interim.py
+data/interim/

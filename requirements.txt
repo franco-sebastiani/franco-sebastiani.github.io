@@ -4,3 +4,4 @@ requests
 pandas
 ipykernel  # lets VS Code run notebooks with this environment
 nbconvert  # lets run.sh execute notebooks from the terminal
+pyarrow  # reads and writes Parquet files (data/interim/)

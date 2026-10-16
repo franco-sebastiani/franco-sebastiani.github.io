@@ -14,8 +14,9 @@ measured against the UK Critical Minerals Strategy (Vision 2035).
 | `assets/` | Shared stylesheet and site icons |
 | `specs/` | Vega-Lite chart specifications |
 | `config/minerals.toml` | The 38 UK critical and growth minerals with their HS (CN8) codes |
-| `pipeline/` | Scripts that retrieve the data |
+| `pipeline/` | Scripts that retrieve and prepare the data |
 | `data/raw/` | Raw data as retrieved (kept local, not committed) and the retrieval log |
+| `data/interim/` | All minerals' trade records in one labelled table (kept local, not committed) |
 | `data/processed/` | Processed data the charts load |
 | `notebooks/` | Exploratory notebooks |
 
@@ -38,6 +39,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 python pipeline/fetch_lookups.py
 python pipeline/fetch_ots.py
+python pipeline/build_interim.py
 ```
 
 Every pipeline retrieval appends a line to `data/raw/retrieval_log.jsonl` (committed) with the timestamp, source,
