@@ -1,0 +1,151 @@
+country_name,country_iso2,value_gbp_m,minerals_supplied
+Germany,DE,1656.56,38
+United States,US,1619.0,38
+South Africa,ZA,1017.48,19
+China,CN,938.73,36
+Switzerland,CH,856.48,26
+Belgium,BE,825.98,30
+Netherlands,NL,795.74,33
+Japan,JP,775.65,25
+France,FR,707.63,36
+Italy,IT,545.61,27
+Norway,NO,372.24,19
+Spain,ES,354.18,25
+Turkey,TR,295.28,20
+Ireland,IE,212.89,28
+Poland,PL,201.4,27
+Hong Kong,HK,166.26,24
+Greece,GR,165.34,10
+Austria,AT,163.77,24
+UAE,AE,143.71,18
+Brazil,BR,141.15,15
+India,IN,134.85,23
+Sweden,SE,131.34,21
+Canada,CA,112.92,25
+South Korea,KR,98.16,20
+Czechia,CZ,86.25,26
+Vietnam,VN,68.56,12
+Finland,FI,62.62,15
+Australia,AU,61.25,16
+Israel,IL,58.33,15
+Taiwan,TW,57.59,22
+Denmark,DK,55.66,18
+Iceland,IS,54.77,4
+Singapore,SG,49.07,18
+Hungary,HU,46.17,17
+Saudi Arabia,SA,43.99,9
+Malaysia,MY,40.76,13
+Romania,RO,37.51,13
+Oman,OM,35.0,5
+Thailand,TH,33.52,16
+Peru,PE,28.49,3
+Morocco,MA,27.56,9
+Mauritania,MR,25.39,1
+Russia,RU,24.33,2
+Estonia,EE,21.5,14
+Portugal,PT,21.31,16
+Egypt,EG,19.79,7
+Bulgaria,BG,15.58,8
+Qatar,QA,15.52,6
+Lithuania,LT,15.06,13
+Kazakhstan,KZ,14.65,6
+Slovenia,SI,14.08,11
+Indonesia,ID,12.0,9
+Chile,CL,10.24,10
+Mexico,MX,9.39,16
+New Zealand,NZ,9.08,8
+Slovakia,SK,8.49,13
+Bosnia & Herz.,BA,7.65,5
+Serbia,XS,7.28,9
+Luxembourg,LU,5.43,12
+Georgia,GE,5.32,2
+Latvia,LV,4.11,6
+Uruguay,UY,3.35,4
+Sri Lanka,LK,3.34,7
+Tunisia,TN,3.3,7
+Senegal,SN,3.08,5
+Bahrain,BH,2.98,3
+Ukraine,UA,2.39,8
+Kenya,KE,2.18,6
+Faroe Islands,FO,1.89,4
+Colombia,CO,1.68,4
+Croatia,HR,1.6,6
+Guyana,GY,1.58,3
+Cyprus,CY,1.47,4
+Malta,MT,1.44,9
+Philippines,PH,1.3,7
+Uzbekistan,UZ,0.94,1
+Nigeria,NG,0.84,6
+Jordan,JO,0.83,2
+Albania,AL,0.82,3
+Argentina,AR,0.82,4
+Liechtenstein,LI,0.79,7
+Pakistan,PK,0.52,6
+Trinidad:Tobago,TT,0.38,3
+Mozambique,MZ,0.36,2
+Algeria,DZ,0.32,2
+Bangladesh,BD,0.3,3
+Madagascar,MG,0.28,1
+Kuwait,KW,0.22,2
+Barbados,BB,0.21,1
+Nicaragua,NI,0.2,1
+Dominica,DM,0.18,1
+Equat Guinea,GQ,0.14,1
+French Polynesia,PF,0.14,1
+Saint Barthelemy,BL,0.12,1
+Lebanon,LB,0.11,3
+San Marino,SM,0.11,1
+Azerbaijan,AZ,0.1,5
+Angola,AO,0.1,2
+Laos,LA,0.09,1
+Falkland Islands,FK,0.09,3
+Paraguay,PY,0.09,2
+Bolivia,BO,0.08,2
+Cook Islands,CK,0.08,1
+Ivory Coast,CI,0.07,1
+Montenegro,ME,0.07,1
+Sierra Leone,SL,0.06,3
+Br Ind Oc Terr,IO,0.06,1
+Andorra,AD,0.05,1
+Ghana,GH,0.05,2
+North Macedonia,MK,0.05,5
+Zambia,ZM,0.03,2
+Gambia,GM,0.03,1
+Panama,PA,0.03,3
+Papua New Guinea,PG,0.03,2
+Cambodia,KH,0.03,3
+Nepal,NP,0.02,2
+Niue Island,NU,0.02,1
+Armenia,AM,0.02,2
+Costa Rica,CR,0.02,5
+Liberia,LR,0.01,1
+Maldives,MV,0.01,3
+Iraq,IQ,0.01,2
+Cent Afr Rep,CF,0.01,1
+Cameroon,CM,0.01,2
+Congo (Republic),CG,0.01,1
+Kosovo,XK,0.01,1
+Dominican Rep,DO,0.01,1
+El Salvador,SV,0.01,2
+Djibouti,DJ,0.01,2
+Ecuador,EC,0.01,2
+Gabon,GA,0.01,2
+Iran,IR,0.01,2
+Jamaica,JM,0.01,1
+Guam,GU,0.01,1
+Brunei,BN,0.0,1
+Bermuda,BM,0.0,1
+Belize,BZ,0.0,1
+Honduras,HN,0.0,1
+Congo (Dem. Rep),CD,0.0,1
+Haiti,HT,0.0,1
+Comoros,KM,0.0,1
+Eswatini,SZ,0.0,1
+Mauritius,MU,0.0,1
+Mali,ML,0.0,1
+Moldova,MD,0.0,1
+Macao,MO,0.0,1
+Namibia,NA,0.0,2
+Somalia,SO,0.0,1
+St Lucia,LC,0.0,1
+Turkmenistan,TM,0.0,1

@@ -40,6 +40,7 @@ pip install -r requirements.txt
 python pipeline/fetch_lookups.py
 python pipeline/fetch_ots.py
 python pipeline/build_interim.py
+python pipeline/build_charts.py
 ```
 
 Every pipeline retrieval appends a line to `data/raw/retrieval_log.jsonl` (committed) with the timestamp, source,
