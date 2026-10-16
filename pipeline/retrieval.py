@@ -20,7 +20,10 @@ LOG_FILE = RAW_DIR / "retrieval_log.jsonl"
 
 def log_retrieval(source, url, mineral, file=None, rows=0, pages=0, sha256=None,
                   status="success", timestamp=None):
-    """Append one record to the retrieval log and return it."""
+    """Append one record to the retrieval log and return it.
+
+    `url` is the URL requested, or a list of URLs when one retrieval needs several requests.
+    """
     record = {
         "timestamp": (timestamp or datetime.now(timezone.utc)).isoformat(),
         "source": source,

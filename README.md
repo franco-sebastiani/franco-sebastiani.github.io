@@ -25,6 +25,8 @@ measured against the UK Critical Minerals Strategy (Vision 2035).
 - **Critical Minerals technical annex** (Department for Business and Trade): mineral lists from Annex 1 and HS code
   definitions from Annex 5, Table 3, transcribed into `config/minerals.toml`. Open Government Licence v3.0.
 
+Methodological choices, such as why trade data starts in January 2022, are documented in [DATA.md](DATA.md).
+
 ## Reproducing the data
 
 Raw data is not committed to this repository. It is rebuilt by running the pipeline scripts. Requires Python 3.11+
@@ -34,10 +36,11 @@ Raw data is not committed to this repository. It is rebuilt by running the pipel
 python3 -m venv .venv --prompt pp434
 source .venv/bin/activate
 pip install -r requirements.txt
-python pipeline/fetch_commodity_lookup.py
+python pipeline/fetch_lookups.py
+python pipeline/fetch_ots.py
 ```
 
 Every pipeline retrieval appends a line to `data/raw/retrieval_log.jsonl` (committed) with the timestamp, source,
 query URL, row and page counts, and a SHA-256 hash of the saved file. Rerunning a script and comparing hashes shows
 whether the source data has changed since the original pull. Saving and logging are handled by the shared module
-`pipeline/retrieval.py`, which every pipeline script uses.
+`pipeline/retrieval.py`, and HMRC API access (pagination, retries, batched code filters) by `pipeline/hmrc_api.py`.
