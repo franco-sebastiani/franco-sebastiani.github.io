@@ -19,6 +19,7 @@ Exports have a similar break one year earlier: GB exports to the EU have been co
 since January 2021.
 
 Sources:
+
 - HMRC, [UK overseas trade in goods statistics: methodology notes](https://www.gov.uk/government/statistics/uk-overseas-trade-in-goods-statistics-july-2025/uk-overseas-trade-in-goods-statistics-july-2025-methodology-notes)
 - ONS, [Understanding the latest changes to UK trade figures with the EU](https://blog.ons.gov.uk/2022/03/11/understanding-the-latest-changes-to-uk-trade-figures-with-the-eu) (March 2022)
 
