@@ -4,7 +4,7 @@ Week 01.
 Question:  how has the value of UK imports of these minerals changed since January 2022?
 Decisions: imports only; all partners, including confidential; records under shared codes
            counted once; value in GBP million.
-Output:    data/processed/imports_total_monthly.csv (month, value_gbp_m)
+Output:    data/processed/imports_total_monthly.csv (date, value_gbp_m)
 
 Run on its own from the repo root: python pipeline/charts/imports_total_monthly.py
 """
@@ -24,7 +24,7 @@ def build(ots):
     imports = unique_records(ots[ots["direction"] == "import"])
     table = imports.groupby("month", as_index=False)["Value"].sum()
     table["value_gbp_m"] = (table["Value"] / 1e6).round(2)
-    return table[["month", "value_gbp_m"]]
+    return table[["month", "value_gbp_m"]].rename(columns={"month": "date"})
 
 
 if __name__ == "__main__":
