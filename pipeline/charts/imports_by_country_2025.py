@@ -7,10 +7,10 @@ Decisions: imports only; calendar year 2025; real countries only (no confidentia
            partners); value counts records under shared codes once; minerals_supplied counts
            minerals with positive imports, so a shared code counts for each of its minerals;
            value in GBP million.
-Output:    data/processed/import_partners_2025.csv
+Output:    data/processed/imports_by_country_2025.csv
            (country_name, country_iso2, value_gbp_m, minerals_supplied)
 
-Run on its own from the repo root: python pipeline/charts/import_partners_2025.py
+Run on its own from the repo root: python pipeline/charts/imports_by_country_2025.py
 """
 
 import sys
@@ -20,7 +20,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))  # pipeline/, for t
 
 from processing import load_interim, save_processed, unique_records
 
-CHART_ID = "import_partners_2025"
+CHART_ID = "imports_by_country_2025"
 
 
 def build(ots):
